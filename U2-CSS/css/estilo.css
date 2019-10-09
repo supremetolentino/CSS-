@@ -1,0 +1,388 @@
+/* @media screen and (min-width: 960px) {
+  body { background-color: green; }
+}
+
+@media screen and (max-width: 960px) and (min-width: 500px) {
+  body { background-color: pink; }
+}
+
+@media screen and (max-width: 500px) {
+  body { background-color: yellow; }
+    #fotoh1 {
+      max-width: 300px;
+      min-width: 150px;
+    }
+}
+@-ms-viewport{
+  width: device-width;
+} */
+
+
+body{
+    background-color:#5b7989;
+    small-screen(max-width: 150px)
+
+}
+header{
+  width: 100%;
+  height: 220px;
+  background-color:#101529 ;
+  border-radius: 10px;
+}
+
+
+header h1{
+  color:white;
+  position: absolute;
+   top: 70px;
+   left: 30%;
+   text-shadow: 2px 2px 2px #02010a;
+}
+
+
+
+ #fotoh1{
+   width: 300px;
+   height: 200px;
+  opacity: 0.52;
+clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+padding: 5px;
+position:absolute;
+top: 10px;
+left : 150px;
+float: left;
+}
+  #fotoh2{
+  width: 300px;
+  height: 200px;
+  opacity: 0.72;
+clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+padding: 5px;
+float: left;
+}
+
+
+.section1{
+  background-color: #82c3a6;
+  padding: 30px;
+
+}
+.img1{
+  width: 800px;
+  height: 400px;
+  display: block;
+  margin: auto;
+}
+
+.padre{
+    background-color:#d5c75f;
+    border: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+.hijo1, .hijo2 {
+  background-color: white;
+  width: 460px;
+  height: 310px;
+  margin-left: 150px;
+}
+.pimg1, .pimg2{
+  padding: 5px;
+  width: 450px;
+  height: 300px;
+
+}
+.pimg1{
+position: relative;
+transition: all 1s ease;
+transform: perspective(600px);
+transform-origin: 100% 50%;
+transform-style: preserve-3d;
+}
+.pimg1:hover{
+/* transform: perspective(600px) rotateY(-180deg) translateX(100%); */
+transform: rotate(10deg);
+border: 2px;
+ box-shadow: 0 4px 8px 0 #82c3a6, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.pimg2:hover{
+  transform:  translate(15px, -20px);
+  border: 2px;
+  box-shadow: 5px 10px  5px 10px #82c3a6;
+}
+footer{
+  column-count:4;
+  column-fill: auto;
+  background-color: cyan;
+  height: 100px;
+  border-radius: 0px 0px 10px 10px;
+  padding: 12px;
+  text-align: justify;
+}
+
+.Dfootim{
+  display:flex;
+
+}
+.footim{
+  padding: 15px;
+  display: inline;
+  width: 75px;
+  height: 75px;
+}
+
+
+@media only screen and (max-width : 700px) {
+    nav {
+        border-bottom: 10px;
+        height: auto;
+        background-color: blue;
+    }
+
+     nav ul {
+        display: none;
+        height: auto;
+        width: auto;
+    }
+/*
+    nav li a {
+        width: 50%;
+        float: right;
+        position: relative;
+
+    }
+
+    nav a {
+        text-align: center;
+
+        width: 10%;
+        text-indent: 5px;
+    } */
+  }
+@media screen and (max-width: 660px){
+/* #menu{
+  width: 200px;
+  height: 200px;
+} */
+#titulo{
+font-size:18px;
+}
+#fotoh1, #fotoh2{
+  width: 200px;
+  height: 135px;
+}
+header{
+  height: 150px;
+}
+}
+
+@media screen and (max-width: 900px) {
+  .img1{
+    width: 100%;
+      height: auto;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .hijo1,.hijo2{
+    width: 100%;
+      height: auto;
+      
+  }
+   .pimg1,.pimg2{
+     width: 100%;
+       height: auto;
+
+  }
+}
+
+
+
+
+@media screen and (max-width: 1120px) {
+footer{
+  font-size: 12px;
+}
+.footim{
+  width: 10%;
+    height: auto;
+}
+}
+
+
+/*
+.hijo, img{
+
+  width: 450px;
+  height: 250px;
+  margin:10px auto;
+  display:flex;
+  justify-content: center;
+  flex: auto;
+}
+ */
+
+
+
+/* .simg{
+  width:700px;
+  height:600px;
+} */
+/* .simg, img{
+  background: #82c3a6;
+  display:block;
+  margin:auto;
+} */
+
+
+
+ /* img{
+   padding: 80px;
+  width: 500px;
+  height: 200px;
+  display: inline-block;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+.Nanu{
+	/* Affects the UL element */
+	overflow: hidden;
+	display: inline-block;
+  float: right;
+  padding: 2px 10px;
+}
+
+.Nanu li{
+	/* Specifying a fallback color and we define CSS3 gradients for the major browsers: */
+
+	background-color: #f0f0f0;
+	background-image: -webkit-gradient(linear,left top, left bottom,from(#fefefe), color-stop(0.5,#f0f0f0), color-stop(0.51, #e6e6e6));
+	background-image: -moz-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+	background-image: -o-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+	background-image: -ms-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+	background-image: linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+
+	border-right: 1px solid rgba(9, 9, 9, 0.125);
+
+	/* Adding a 1px inset highlight for a more polished efect: */
+
+	box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+	-moz-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+	-webkit-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+
+	position:relative;
+
+	float: left;
+	list-style: none;
+}
+
+.Nanu li:after{
+
+	/* This creates a pseudo element inslide each LI */
+
+	content:'.';
+	overflow:hidden;
+	position:absolute;
+	width:50%;
+	height:50%;
+	top:0;
+	left:0;
+	z-index:1;
+	opacity:0;
+
+	/* Gradients! */
+
+	background-image:-webkit-gradient(linear, left top, right top, from(rgba(168,168,168,0.5)),color-stop(0.5,rgba(168,168,168,0)), to(rgba(168,168,168,0.5)));
+	background-image:-moz-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+	background-image:-o-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+	background-image:-ms-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+	background-image:linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+
+	/* Creating borders with box-shadow. Useful, as they don't affect the size of the element. */
+
+	box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
+	-moz-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
+	-webkit-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
+
+	/* This will create a smooth transition for the opacity property */
+
+	-moz-transition:0.25s all;
+	-webkit-transition:0.25s all;
+	-o-transition:0.25s all;
+	transition:0.25s all;
+}
+
+/* Treating the first LI and li:after elements separately */
+
+.Nanu li:first-child{
+	border-radius: 4px 0 0 4px;
+}
+
+.Nanu li:first-child:after,
+.Nanu li.selected:first-child:after{
+	box-shadow:1px 0 0 #a3a3a3,2px 0 0 #fff;
+	-moz-box-shadow:1px 0 0 #a3a3a3,2px 0 0 #fff;
+	-webkit-box-shadow:1px 0 0 #a3a3a3,2px 0 0 #fff;
+
+	border-radius:4px 0 0 4px;
+}
+
+.Nanu li:last-child{
+	border-radius: 0 4px 4px 0;
+}
+
+/* Treating the last LI and li:after elements separately */
+
+.Nanu li:last-child:after,
+.Nanu li.selected:last-child:after{
+	box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff;
+	-moz-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff;
+	-webkit-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff;
+
+	border-radius:0 4px 4px 0;
+}
+
+.Nanu li:hover:after,
+.Nanu li.selected:after,
+.Nanu li:target:after{
+	/* This property triggers the CSS3 transition */
+	opacity:1;
+}
+
+.Nanu:hover li.selected:after,
+.Nanu:hover li:target:after{
+	/* Hides the targeted li when we are hovering on the UL */
+	opacity:0;
+}
+
+.Nanu li.selected:hover:after,
+.Nanu li:target:hover:after{
+	opacity:1 !important;
+}
+
+/* Styling the anchor elements */
+
+.Nanu li a{
+	color: #5d5d5d;
+	display: inline-block;
+	font: 10px/1 Lobster,Arial,sans-serif;
+	padding: 12px 35px 14px;
+	position: relative;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
+	z-index:2;
+	text-decoration:none !important;
+	white-space:nowrap;
+}
