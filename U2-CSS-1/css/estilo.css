@@ -1,0 +1,306 @@
+
+#contenedor {
+  /* width: 1000px;
+  height: 600px;
+  border: 2px solid;
+  margin: 0 auto;
+  background-color: #dbfff1;
+  text-align: center;
+  transition: background 1s;
+  animation: miAnimacion 5s; */
+ width:100%;
+  height: 125px;
+  background-color:#101529;
+  border-radius: 15px;
+  display: inline-block;
+  transition: background 1s;
+  animation: miAnimacion 3s;
+}
+
+@keyframes miAnimacion {
+  0%{
+    margin-top:150%;
+  }
+  70%{
+    margin-top:-5%;
+  }
+  80%{
+    margin-top:5%;
+  }
+
+}
+body{
+  background-color: #5b7989;
+}
+
+header {
+  width:100%;
+  height: 125px;
+  background-color:#101529;
+  border-radius: 15px;
+  display: inline-block;
+}
+.f1{
+  width: 180px;
+  height: auto;
+ opacity: 0.52;
+ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+ padding: 5px;
+ position:absolute;
+ top: 10px;
+ left : 90px;
+ float: left;
+ transition: background 1s;
+ animation: miAnimacion 3s;
+}
+
+.f2{
+  width: 170px;
+  height: auto;
+  opacity: 0.90;
+ border-radius: 20px 0 0 20px;
+ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+ padding: 5px;
+ position:absolute;
+ top: 10px;
+ left : 15px;
+ float: left;
+ transition: background 1s;
+ animation: miAnimacion 3s;
+}
+h1{
+  color: white;
+  font-style:normal;
+  font-size: 50px;
+  text-align: center;
+}
+
+#menu{
+  float: right;
+  margin: 10px;
+  padding: 5px;
+  background: white;
+  position: absolute;
+  top: 10px; right: 30px;
+  border-radius: 5px;
+  animation: miAnimacion 3.5s;
+}
+ul.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    border-radius: 5px;
+  }
+ul.menu ul {
+    background: #444;
+    display: none;
+    position: absolute;
+    left: 0; top: 100%;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+.section1{
+  background-color: #82c3a6;
+  margin: 0;
+  border: 10px;
+  padding: 50px;
+}
+.img1{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.padre{
+    background-color:#d5c75f;
+    margin: 0;
+    border: 10px;
+    display: flex;
+    width: 100%;
+    height: auto;
+
+  }
+.hijo1{
+  background-color: white;
+  width: 480px;
+  height: auto;
+  margin-left: 100px;
+}
+.hijo2{
+  background-color: white;
+  width: 470px;
+  height: auto;
+  margin-left: 100px;
+
+}
+ .pimg1{
+  position: absolute;
+  top: 5px; left: 5px;
+  padding: 0px;
+  width: 450px;
+  height: auto;
+}
+.pimg2{
+ position: relative;
+ top: 5px; left: 5px;
+ padding: 0px;
+ width: 450px;
+ height: auto;
+}
+
+.pimg1{
+position: relative;
+transition: all 1s ease;
+transform: perspective(600px);
+transform-origin: 100% 50%;
+transform-style: preserve-3d;
+}
+
+  /* .pimg2{
+    display: none;
+  } */
+
+}
+h1:hover{
+  font-size: 20px;
+}
+.pimg1:hover{
+/* transform: perspective(600px) rotateY(-180deg) translateX(100%); */
+transform: rotate(10deg);
+border: 2px;
+ box-shadow: 0 4px 8px 0 #82c3a6, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pimg2:hover{
+  transform:  translate(15px, -20px);
+  border: 2px;
+  box-shadow: 5px 10px  5px 10px #82c3a6;
+}
+
+footer{
+  width: 100%;
+  height: auto;
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+  align-items: center;
+  column-count: 4;
+  display:block;
+}
+.lor1, .lor2,.lor3, .lor4 {
+  /* background-color: gray; */
+padding: 15px;
+width: 90%;
+height: auto;
+color: black;
+}
+.lor3 img{
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+
+
+
+
+
+      @media screen and (max-width : 1020px)  {
+  #menu{
+              background-color: blue;
+              position: relative;
+              top: -30px; right: 300px;
+          }
+
+          .paisajes img{
+            width: 350px;
+            height: 250px;
+            margin: 3px;
+            border: 10px;
+            padding: 15px;
+          }
+          h1{
+            font-size: 30px;
+            font-family:  Dancing Script;
+          }
+
+          footer{
+            column-count: 1;
+            display:block;
+            }
+         header{
+           height: 140px;
+         }
+         .f1, .f2{
+           width: 18%;
+           height: auto;
+         }
+         body{
+           background-color: white
+         }
+
+         .padre{
+
+           display: block;
+           top: 200px;
+           width: 100%%;
+           height: 950px;
+         }
+         .hijo1{
+           padding: 2px;
+           position: relative;
+           top: 7px; left: 0px;
+           background-color: green;
+           width: 70%;
+           height: auto;
+           margin-left: 150px;
+           flex:auto;
+         }
+         .pimg1{
+          position: relative;
+          top: 5px; left: 5px;
+          padding: 5px;
+          width: 97%;
+          height: auto;
+        }
+
+
+         .hijo2{
+           padding: 2px;
+           position: relative;
+           top: 17px; left: 0px;
+           background-color: green;
+           width: 70%;
+           height: auto;
+           margin-left: 150px;
+           flex:auto;
+         }
+         .pimg2{
+          position: relative;
+          top: 5px; left: 5px;
+          padding: 5px;
+          width: 97%;
+          height: auto;
+        }
+
+        .pimg1:hover{
+        transform: rotate(100deg);
+        border: 20px;
+         box-shadow: 0 4px 8px 0 #82c3a6, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
